@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="/js.js"></script>
+    <link href="/css/fontawesome.css" rel="stylesheet">
+    <link href="/css/brands.css" rel="stylesheet">
+    <link href="/css/solid.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+</head>
+
+<body>
+    <div class="mainwrapper">
+        <div class="left">
+            <div class="home">
+                <div class="homebtn1">
+
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="homebtn1">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+
+            </div>
+            <div class="library">
+                <div class="homebtn3">
+
+                    <i class="fa-solid fa-book-open" style="color: #ffffff;"></i>
+                    <a href="#">Your Library</a>
+                    <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                </div>
+
+            </div>
+        </div>
+        <div class="main">
+            <div class="navbar">
+                <div class="navicons">
+                    <i style="color: white; transform: scale(1.5); background-color: rgba(0, 0, 0, 0.658); padding: 5px; border-radius: 50%;"
+                        class="fa fa-arrow-left" aria-hidden="true"></i>
+                </div>
+                <div class="profile">
+                    <i style="color: white; transform: scale(1.5); background-color: rgba(0, 0, 0, 0.658); padding: 5px; border-radius: 50%;"
+                        class="fa fa-user-plus"></i>
+
+                </div>
+
+            </div>
+            <div class="anouncewrap" id="anounce">
+                <div class="anounce">
+                    <div class="left1">
+                        <img class="img1" src="/anounce.jpeg" alt="">
+                        <div class="rest">
+                            <p>PLAYLIST</p>
+                            <p class="Mainhead">
+                                Cuddle & Chill
+                            </p>
+                            <p>Listen Now</p>
+                            <div class="playbtn">
+                                <button class="play">Play</button>
+                                <button class="follow">Follow</button>
+                            </div>
+                        </div>
+
+                        <div class="hide"><button onClick="hideanounce()">Hide Announcement</button></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="greet">Good Evening</div>
+            <div class="recent">
+                <div class="recentitems">
+                    <img src="/1.jpeg" alt="">
+                    <p class="head">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+
+                </div>
+                <div class="recentitems">
+                    <img src="/2.jpeg" alt="">
+                    <p class="head">Funk Music</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+
+                </div>
+                <div class="recentitems">
+                    <img src="/3.jpeg" alt="">
+                    <p class="head">EDM</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="recentitems">
+                    <img src="/4.jpeg" alt="">
+                    <p class="head">90's Rap</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="recentitems">
+                    <img src="/5.jpeg" alt="">
+                    <p class="head">Chil Music</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+
+            </div>
+            <div class="madehead">
+                <div class="title">Made for Anosh</div>
+                <button class="showmade" onclick="showmade()">
+                    <i id="drop" class="fa-solid fa-chevron-down" style="color: #ffffff;"></i>
+
+
+                </button>
+            </div>
+            <div class="madefor" id="showmadebtn">
+                <div class="madeforitems">
+                    <img src="/1.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/2.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/3.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/4.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/2.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/1.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/3.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/4.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+            </div>
+
+
+
+
+            <div class="madehead">
+                <div class="title">Your Top Mixes
+                </div>
+                <button class="showmade" onclick="showmade()">
+                    <i id="drop" class="fa-solid fa-chevron-down" style="color: #ffffff;"></i>
+
+
+                </button>
+            </div>
+            <div class="madefor" id="showmadebtn">
+                <div class="madeforitems">
+                    <img src="/1.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/2.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/3.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/4.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/2.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/1.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/3.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/4.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+            </div>
+
+
+
+
+            <div class="madehead">
+                <div class="title">Hits</div>
+                <button class="showmade" onclick="showmade()">
+                    <i id="drop" class="fa-solid fa-chevron-down" style="color: #ffffff;"></i>
+
+
+                </button>
+            </div>
+            <div class="madefor" id="showmadebtn">
+                <div class="madeforitems">
+                    <img src="/1.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/2.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/3.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/4.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/2.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/1.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/3.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/4.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+            </div>
+
+
+
+            <div class="madehead">
+                <div class="title">Your Playlists</div>
+                <button class="showmade" onclick="showmade()">
+                    <i id="drop" class="fa-solid fa-chevron-down" style="color: #ffffff;"></i>
+
+
+                </button>
+            </div>
+            <div class="madefor" id="showmadebtn">
+                <div class="madeforitems">
+                    <img src="/1.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/2.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/3.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/4.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/2.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/1.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/3.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/4.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+            </div>
+
+
+
+            <div class="madehead">
+                <div class="title">90's Hits</div>
+                <button class="showmade" onclick="showmade()">
+                    <i id="drop" class="fa-solid fa-chevron-down" style="color: #ffffff;"></i>
+
+
+                </button>
+            </div>
+            <div class="madefor" id="showmadebtn">
+                <div class="madeforitems">
+                    <img src="/1.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/2.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/3.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/4.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/2.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/1.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/3.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/4.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+            </div>
+
+
+
+
+            <div class="madehead">
+                <div class="title">Pop Trending</div>
+                <button class="showmade" onclick="showmade()">
+                    <i id="drop" class="fa-solid fa-chevron-down" style="color: #ffffff;"></i>
+
+
+                </button>
+            </div>
+            <div class="madefor" id="showmadebtn">
+                <div class="madeforitems">
+                    <img src="/1.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/2.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/3.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/4.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/2.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/1.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/3.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/4.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+            </div>
+
+
+
+
+            <div class="madehead">
+                <div class="title">Hip Hop</div>
+                <button class="showmade" onclick="showmade()">
+                    <i id="drop" class="fa-solid fa-chevron-down" style="color: #ffffff;"></i>
+
+
+                </button>
+            </div>
+            <div class="madefor" id="showmadebtn">
+                <div class="madeforitems">
+                    <img src="/1.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/2.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/3.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/4.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/2.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/1.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/3.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/4.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+            </div>
+
+
+
+            <div class="madehead">
+                <div class="title">Faverouite Artists</div>
+                <button class="showmade" onclick="showmade()">
+                    <i id="drop" class="fa-solid fa-chevron-down" style="color: #ffffff;"></i>
+
+
+                </button>
+            </div>
+            <div class="madefor" id="showmadebtn">
+                <div class="madeforitems">
+                    <img src="/1.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/2.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/3.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/4.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/2.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/1.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/3.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+                <div class="madeforitems">
+                    <img src="/4.jpeg" alt="">
+                    <p class="head">Daily Mix 1</p>
+                    <p class="subhead">Hip Hop</p>
+                    <i class="fa-solid fa-circle-play" style="color: #1DB954;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="btmwrap" id="bottombar">
+        <div class="bottom" id="btmmain">
+    <audio id="audio" controls src="/1.mp3" style="display: none;" ></audio>
+
+        <div class="btmleft" id="btmlftid">
+            <img id="cover" src="/1.jpeg" alt="">
+            <div class="btmlftmdl">
+                <p class="songname">High</p>
+                <p class="artist">Talhah Yunus</p>
+            </div>
+            <i class="fa-regular fa-heart" style="color: #94a9cc;"></i>
+        </div>
+        <div class="btmmdl">
+            <div class="btmmdltop">
+                <button onclick="shufflefn()" id="shuffle"><i class="fa-solid fa-shuffle"></i></button>
+                <button onclick="backfn()" id="back"><i class="fa-solid fa-backward-step"></i></button>
+                <button style="background-color: rgb(31, 31, 31);" onclick="playfn()" class="playclass" id="playid"><i class="fa-solid fa-play playbutton"></i></button>
+                <button onclick="stopfn()" id="stopid" class="stopcl" ><i class="fa-solid fa-stop"></i></button>
+                <button onclick="nextfn()" id="next"><i class="fa-solid fa-forward-step"></i></button>
+                <button onclick="loopfn()" id="loop"><i class="fa-solid fa-repeat"></i></button>
+                
+               
+                
+                
+                
+                
+            </div>
+            <div class="btmmdlbtm">
+<input type="range" name="seek" class="seekclass" id="seekid" min="10" max="100">
+            </div>
+        </div>
+        <div class="btmrght">
+            <button class="lyrics" style="color: white;"><i class="fa-solid fa-music"></i></button>
+            <button class="list" style="color: white;"><i class="fa-solid fa-list"></i></button>
+            <button class="device" style="color: white;"><i class="fa-solid fa-mobile-screen-button"></i></button>
+            <button class="volume" style="color: white;" onclick="mute()"><i id="mute" class="fa-solid fa-volume-high volbtn"></i></button>
+            <input type="range" name="vol" id="vol" min="0" max="100" value="100" oninput="chngvol()">
+            <button  class="fullscreen" id="tglfl" onclick="togglefullscreen()"><i class="fa-solid fa-up-right-and-down-left-from-center flscrnicon"></i></button>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+
+</html>
